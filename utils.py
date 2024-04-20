@@ -27,9 +27,7 @@ def generate_auth_url(app_id, redirect_uri, authorize_url):
     return url, csrf_state
 
 
-# Function to get the access token
-
-
+# Function to get the auth_code
 def get_auth_code(app_id, redirect_uri, authorize_url):
     # type: (str, str, str) -> str
     """
